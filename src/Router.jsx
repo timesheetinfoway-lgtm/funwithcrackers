@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from "./Home/Home";
+import Home from "./Home/Homey";
 import Login from './Admin/Login/Login';
 import Inventory from './Admin/Inventory/Inventory';
 import Tracking from './Admin/Tracking/Tracking';
@@ -11,7 +11,6 @@ import Location from './Admin/Location/Location';
 import Direct from './Admin/Direct/Direct';
 import Dispatch from './Admin/Dispatch/Dispatch';
 import Banner from './Admin/Banner/Banner';
-import Homey from './Home/Homey';
 import Safety from './Home/Safety';
 import About from './Home/About';
 import Contact from './Home/Contact';
@@ -30,7 +29,7 @@ const AllRoutes = () => {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/price-list" element={<Pricelist />} />
       <Route path="/status" element={<Status />} />
-      
+
       <Route element={<ProtectedRoute />}>
         <Route path="/inventory" element={<Inventory />} />
         <Route path="/listing" element={<List />} />
